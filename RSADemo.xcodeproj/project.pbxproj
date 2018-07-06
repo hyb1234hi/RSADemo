@@ -15,6 +15,9 @@
 		0B9A3DED20EF4B4F00660000 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9A3DEC20EF4B4F00660000 /* main.m */; };
 		0B9A3DF720EF4B4F00660000 /* RSADemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9A3DF620EF4B4F00660000 /* RSADemoTests.m */; };
 		0B9A3E0220EF4B4F00660000 /* RSADemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9A3E0120EF4B4F00660000 /* RSADemoUITests.m */; };
+		0B9A3E1420EF4B6100660000 /* RSAEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B9A3E1120EF4B6100660000 /* RSAEncryptor.m */; };
+		0B9A3E1520EF4B6100660000 /* public_key.der in Resources */ = {isa = PBXBuildFile; fileRef = 0B9A3E1220EF4B6100660000 /* public_key.der */; };
+		0B9A3E1620EF4B6100660000 /* private_key.p12 in Resources */ = {isa = PBXBuildFile; fileRef = 0B9A3E1320EF4B6100660000 /* private_key.p12 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,10 @@
 		0B9A3DFD20EF4B4F00660000 /* RSADemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSADemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B9A3E0120EF4B4F00660000 /* RSADemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSADemoUITests.m; sourceTree = "<group>"; };
 		0B9A3E0320EF4B4F00660000 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B9A3E1020EF4B6100660000 /* RSAEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSAEncryptor.h; sourceTree = "<group>"; };
+		0B9A3E1120EF4B6100660000 /* RSAEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSAEncryptor.m; sourceTree = "<group>"; };
+		0B9A3E1220EF4B6100660000 /* public_key.der */ = {isa = PBXFileReference; lastKnownFileType = file; path = public_key.der; sourceTree = "<group>"; };
+		0B9A3E1320EF4B6100660000 /* private_key.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = private_key.p12; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +108,7 @@
 		0B9A3DDC20EF4B4E00660000 /* RSADemo */ = {
 			isa = PBXGroup;
 			children = (
+				0B9A3E0F20EF4B6100660000 /* RSA */,
 				0B9A3DDD20EF4B4E00660000 /* AppDelegate.h */,
 				0B9A3DDE20EF4B4E00660000 /* AppDelegate.m */,
 				0B9A3DE020EF4B4E00660000 /* ViewController.h */,
@@ -130,6 +138,17 @@
 				0B9A3E0320EF4B4F00660000 /* Info.plist */,
 			);
 			path = RSADemoUITests;
+			sourceTree = "<group>";
+		};
+		0B9A3E0F20EF4B6100660000 /* RSA */ = {
+			isa = PBXGroup;
+			children = (
+				0B9A3E1020EF4B6100660000 /* RSAEncryptor.h */,
+				0B9A3E1120EF4B6100660000 /* RSAEncryptor.m */,
+				0B9A3E1220EF4B6100660000 /* public_key.der */,
+				0B9A3E1320EF4B6100660000 /* private_key.p12 */,
+			);
+			path = RSA;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +256,8 @@
 			files = (
 				0B9A3DEA20EF4B4F00660000 /* LaunchScreen.storyboard in Resources */,
 				0B9A3DE720EF4B4F00660000 /* Assets.xcassets in Resources */,
+				0B9A3E1520EF4B6100660000 /* public_key.der in Resources */,
+				0B9A3E1620EF4B6100660000 /* private_key.p12 in Resources */,
 				0B9A3DE520EF4B4E00660000 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B9A3DE220EF4B4E00660000 /* ViewController.m in Sources */,
+				0B9A3E1420EF4B6100660000 /* RSAEncryptor.m in Sources */,
 				0B9A3DED20EF4B4F00660000 /* main.m in Sources */,
 				0B9A3DDF20EF4B4E00660000 /* AppDelegate.m in Sources */,
 			);
